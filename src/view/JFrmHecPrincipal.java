@@ -17,6 +17,8 @@ public class JFrmHecPrincipal extends javax.swing.JFrame {
      */
     public JFrmHecPrincipal() {
         initComponents();
+        setTitle("Sistema de Compra é Venda de peças é perifericos de computadores");
+        setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**
@@ -49,22 +51,27 @@ public class JFrmHecPrincipal extends javax.swing.JFrame {
         jMenu1.add(jSeparator1);
 
         jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_U, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/do-utilizador.png"))); // NOI18N
         jMenuItem1.setText("Usuários");
         jMenu1.add(jMenuItem1);
 
         jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/cliente.png"))); // NOI18N
         jMenuItem2.setText("Clientes");
         jMenu1.add(jMenuItem2);
 
         jMenuItem3.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/parcel.png"))); // NOI18N
         jMenuItem3.setText("Fornecedor");
         jMenu1.add(jMenuItem3);
 
         jMenuItem4.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuItem4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/produtos.png"))); // NOI18N
         jMenuItem4.setText("Produtos");
         jMenu1.add(jMenuItem4);
 
         jMenuItem5.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuItem5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/sair.png"))); // NOI18N
         jMenuItem5.setText("Sair");
         jMenu1.add(jMenuItem5);
 
@@ -92,7 +99,7 @@ public class JFrmHecPrincipal extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 277, Short.MAX_VALUE)
+            .addGap(0, 284, Short.MAX_VALUE)
         );
 
         pack();
