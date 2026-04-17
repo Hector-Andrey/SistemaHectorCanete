@@ -100,10 +100,6 @@ public class JDlgHecFornecedor extends javax.swing.JDialog {
 
         jRadioButton1.setText("Ativo");
 
-        jFormattedTextField5.setText("jFormattedTextField5");
-
-        jFormattedTextField6.setText("jFormattedTextField6");
-
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/acrescentar.png"))); // NOI18N
         jButton1.setText("Incluir");
 
@@ -261,7 +257,7 @@ public class JDlgHecFornecedor extends javax.swing.JDialog {
                     .addComponent(jButton4)
                     .addComponent(jButton5)
                     .addComponent(jButton6))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(33, Short.MAX_VALUE))
         );
 
         pack();

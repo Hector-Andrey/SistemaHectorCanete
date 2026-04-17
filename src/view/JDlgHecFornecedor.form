@@ -200,7 +200,7 @@
                   <Component id="jButton5" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jButton6" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="15" max="32767" attributes="0"/>
+              <EmptySpace pref="33" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -306,14 +306,8 @@
     <Component class="javax.swing.JFormattedTextField" name="jFormattedTextField4">
     </Component>
     <Component class="javax.swing.JFormattedTextField" name="jFormattedTextField5">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jFormattedTextField5"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JFormattedTextField" name="jFormattedTextField6">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jFormattedTextField6"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
