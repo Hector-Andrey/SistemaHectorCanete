@@ -71,8 +71,8 @@ public class JFrmHecMenus extends javax.swing.JFrame {
         jMenu1.add(jMenuItem4);
 
         jMenuItem5.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMenuItem5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/sair.png"))); // NOI18N
-        jMenuItem5.setText("Sair");
+        jMenuItem5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/categorizacao.png"))); // NOI18N
+        jMenuItem5.setText("Categoria");
         jMenu1.add(jMenuItem5);
 
         jMenuBar1.add(jMenu1);
