@@ -4,8 +4,10 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/hecto/OneDrive/Documentos/NetBeansProjects/SistemaHectorCanete/src/view/JDlgHecUsuarios.java</file>
-            <file>file:/C:/Users/hecto/OneDrive/Documentos/NetBeansProjects/SistemaHectorCanete/src/view/JFrmHecPrincipal.java</file>
+            <file>file:/C:/Users/hecto/OneDrive/Documentos/NetBeansProjects/SistemaHectorCanete/src/view/JFrmHecMenus.java</file>
             <file>file:/C:/Users/hecto/OneDrive/Documentos/NetBeansProjects/SistemaHectorCanete/src/view/JDlgHecFornecedor.java</file>
+            <file>file:/C:/Users/hecto/OneDrive/Documentos/NetBeansProjects/SistemaHectorCanete/src/view/JDlgHecCategoria.java</file>
+            <file>file:/C:/Users/hecto/OneDrive/Documentos/NetBeansProjects/SistemaHectorCanete/src/view/JDlgHecClientes.java</file>
         </group>
     </open-files>
 </project-private>

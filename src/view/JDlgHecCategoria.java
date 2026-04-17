@@ -8,14 +8,14 @@ package view;
  *
  * @author hecto
  */
-public class JDlgHecProdutos extends javax.swing.JDialog {
+public class JDlgHecCategoria extends javax.swing.JDialog {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(JDlgHecProdutos.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(JDlgHecCategoria.class.getName());
 
     /**
      * Creates new form JDlgHecProdutos
      */
-    public JDlgHecProdutos(java.awt.Frame parent, boolean modal) {
+    public JDlgHecCategoria(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
     }
@@ -39,7 +39,6 @@ public class JDlgHecProdutos extends javax.swing.JDialog {
         jTextField2 = new javax.swing.JTextField();
         jFormattedTextField2 = new javax.swing.JFormattedTextField();
         jLabel6 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
         jLabel7 = new javax.swing.JLabel();
         jTextField3 = new javax.swing.JTextField();
         jTextField4 = new javax.swing.JTextField();
@@ -49,6 +48,7 @@ public class JDlgHecProdutos extends javax.swing.JDialog {
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
+        jComboBox2 = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -63,8 +63,6 @@ public class JDlgHecProdutos extends javax.swing.JDialog {
         jLabel5.setText("Data de Cadastro");
 
         jLabel6.setText("Status");
-
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabel7.setText("Usuario");
 
@@ -86,6 +84,8 @@ public class JDlgHecProdutos extends javax.swing.JDialog {
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/procurar.png"))); // NOI18N
         jButton6.setText("Pesquisar");
 
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -100,7 +100,7 @@ public class JDlgHecProdutos extends javax.swing.JDialog {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel6)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(96, 96, 96))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -114,7 +114,7 @@ public class JDlgHecProdutos extends javax.swing.JDialog {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(0, 52, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
@@ -160,7 +160,7 @@ public class JDlgHecProdutos extends javax.swing.JDialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jFormattedTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
@@ -174,7 +174,7 @@ public class JDlgHecProdutos extends javax.swing.JDialog {
                     .addComponent(jButton2)
                     .addComponent(jButton1)
                     .addComponent(jButton3))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton4)
                     .addComponent(jButton5)
@@ -210,7 +210,7 @@ public class JDlgHecProdutos extends javax.swing.JDialog {
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                JDlgHecProdutos dialog = new JDlgHecProdutos(new javax.swing.JFrame(), true);
+                JDlgHecCategoria dialog = new JDlgHecCategoria(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
@@ -229,7 +229,7 @@ public class JDlgHecProdutos extends javax.swing.JDialog {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JFormattedTextField jFormattedTextField1;
     private javax.swing.JFormattedTextField jFormattedTextField2;
     private javax.swing.JLabel jLabel1;
