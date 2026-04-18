@@ -75,7 +75,7 @@
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="jBtnHecAlterar" max="32767" attributes="0"/>
-                                  <Component id="jBtnHeCancelar" max="32767" attributes="0"/>
+                                  <Component id="jBtnHecCancelar" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -146,7 +146,7 @@
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jBtnHecConfirmar" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jBtnHeCancelar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnHecCancelar" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jBtnHecPesquisar" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
@@ -255,6 +255,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Incluir"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnHecIncluirActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBtnHecAlterar">
       <Properties>
@@ -263,6 +266,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Alterar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnHecAlterarActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBtnHecExcluir">
       <Properties>
@@ -271,6 +277,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Excluir"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnHecExcluirActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBtnHecConfirmar">
       <Properties>
@@ -279,14 +288,20 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Confirmar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnHecConfirmarActionPerformed"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jBtnHeCancelar">
+    <Component class="javax.swing.JButton" name="jBtnHecCancelar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/imagens/imagens/cancelado.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Cancelar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnHecCancelarActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBtnHecPesquisar">
       <Properties>
@@ -295,6 +310,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Pesquisar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnHecPesquisarActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

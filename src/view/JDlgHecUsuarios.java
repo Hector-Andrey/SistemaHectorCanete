@@ -4,6 +4,8 @@
  */
 package view;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author hecto
@@ -20,6 +22,33 @@ public class JDlgHecUsuarios extends javax.swing.JDialog {
         initComponents();
         setTitle("Cadastro de Usuários");
         setLocationRelativeTo(null);
+        
+        jTxtHecNome.setEnabled(false);
+        jFmtHecCpf.setEnabled(false);
+        jTxtHecApelido.setEnabled(false);
+        jCboHecNivel.setEnabled(false);
+        jFmtHecDataNascimento.setEnabled(false);
+        jPwfHecSenha.setEnabled(false);
+        jChbHecStatus.setEnabled(false);
+        jTxtHecCodigo.setEnabled(false);
+        jBtnHecConfirmar.setEnabled(false);
+        jBtnHecCancelar.setEnabled(false);
+    }
+        public void habilitar(boolean valor) {
+        jTxtHecNome.setEnabled(valor);
+        jTxtHecCodigo.setEnabled(valor);
+        jTxtHecApelido.setEnabled(valor);
+        jFmtHecCpf.setEnabled(valor);
+        jFmtHecDataNascimento.setEnabled(valor);
+        jCboHecNivel.setEnabled(valor);
+        jChbHecStatus.setEnabled(valor);
+        jPwfHecSenha.setEnabled(valor);
+        jBtnHecConfirmar.setEnabled(valor);
+        jBtnHecCancelar.setEnabled(valor);
+        jBtnHecPesquisar.setEnabled(!valor);
+        jBtnHecExcluir.setEnabled(!valor);
+        jBtnHecAlterar.setEnabled(!valor);
+        jBtnHecIncluir.setEnabled(!valor);
     }
 
     /**
@@ -72,25 +101,29 @@ public class JDlgHecUsuarios extends javax.swing.JDialog {
 
         jBtnHecIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/acrescentar.png"))); // NOI18N
         jBtnHecIncluir.setText("Incluir");
+        jBtnHecIncluir.addActionListener(this::jBtnHecIncluirActionPerformed);
 
         jBtnHecAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/papel.png"))); // NOI18N
         jBtnHecAlterar.setText("Alterar");
+        jBtnHecAlterar.addActionListener(this::jBtnHecAlterarActionPerformed);
 
         jBtnHecExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/excluir.png"))); // NOI18N
         jBtnHecExcluir.setText("Excluir");
+        jBtnHecExcluir.addActionListener(this::jBtnHecExcluirActionPerformed);
 
         jBtnHecConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/verifica.png"))); // NOI18N
         jBtnHecConfirmar.setText("Confirmar");
+        jBtnHecConfirmar.addActionListener(this::jBtnHecConfirmarActionPerformed);
 
         jBtnHecCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/cancelado.png"))); // NOI18N
         jBtnHecCancelar.setText("Cancelar");
+        jBtnHecCancelar.addActionListener(this::jBtnHecCancelarActionPerformed);
 
         jBtnHecPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/procurar.png"))); // NOI18N
         jBtnHecPesquisar.setText("Pesquisar");
+        jBtnHecPesquisar.addActionListener(this::jBtnHecPesquisarActionPerformed);
 
         jCboHecNivel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        jTxtHecNome.addActionListener(this::jTxtHecNomeActionPerformed);
 
         jChbHecStatus.setText("Ativo");
 
@@ -208,9 +241,35 @@ public class JDlgHecUsuarios extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTxtHecNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtHecNomeActionPerformed
+    private void jBtnHecIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnHecIncluirActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtHecNomeActionPerformed
+        habilitar(true);
+    }//GEN-LAST:event_jBtnHecIncluirActionPerformed
+
+    private void jBtnHecCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnHecCancelarActionPerformed
+        // TODO add your handling code here:
+        habilitar(false);
+    }//GEN-LAST:event_jBtnHecCancelarActionPerformed
+
+    private void jBtnHecAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnHecAlterarActionPerformed
+        // TODO add your handling code here:
+        habilitar(rootPaneCheckingEnabled);
+    }//GEN-LAST:event_jBtnHecAlterarActionPerformed
+
+    private void jBtnHecConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnHecConfirmarActionPerformed
+        // TODO add your handling code here:
+        habilitar(!rootPaneCheckingEnabled);
+    }//GEN-LAST:event_jBtnHecConfirmarActionPerformed
+
+    private void jBtnHecExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnHecExcluirActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showConfirmDialog(null, "Confirma Exclusão", "Selecione uma opção", JOptionPane.YES_NO_OPTION);
+    }//GEN-LAST:event_jBtnHecExcluirActionPerformed
+
+    private void jBtnHecPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnHecPesquisarActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showInputDialog(null, "Entre com a chave primaria:");
+    }//GEN-LAST:event_jBtnHecPesquisarActionPerformed
 
     /**
      * @param args the command line arguments

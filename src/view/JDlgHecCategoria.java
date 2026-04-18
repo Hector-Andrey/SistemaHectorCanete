@@ -4,6 +4,8 @@
  */
 package view;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author hecto
@@ -18,6 +20,34 @@ public class JDlgHecCategoria extends javax.swing.JDialog {
     public JDlgHecCategoria(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+         setTitle("Categoria");
+        setLocationRelativeTo(null);
+        
+        jTxtHecNome.setEnabled(false);
+        jFmtHecCodigo.setEnabled(false);
+        jTxtHecTipo.setEnabled(false);
+        jFmtHecDataCadastro.setEnabled(false);
+        jCboHecStatus.setEnabled(false);
+        jTxtHecUsuario.setEnabled(false);
+        jTxtHecDescrição.setEnabled(false);
+        jBtnHecConfirmar.setEnabled(false);
+        jBtnHecCancelar.setEnabled(false);
+    }
+    
+        public void habilitar(boolean valor) {
+        jTxtHecNome.setEnabled(valor);
+        jFmtHecCodigo.setEnabled(valor);
+        jTxtHecTipo.setEnabled(valor);
+        jFmtHecDataCadastro.setEnabled(valor);
+        jCboHecStatus.setEnabled(valor);
+        jTxtHecUsuario.setEnabled(valor);
+        jTxtHecDescrição.setEnabled(valor);
+        jBtnHecCancelar.setEnabled(valor);
+        jBtnHecConfirmar.setEnabled(valor);
+        jBtnHecPesquisar.setEnabled(!valor);
+        jBtnHecExcluir.setEnabled(!valor);
+        jBtnHecAlterar.setEnabled(!valor);
+        jBtnHecIncluir.setEnabled(!valor);
     }
 
     /**
@@ -45,7 +75,7 @@ public class JDlgHecCategoria extends javax.swing.JDialog {
         jBtnHecIncluir = new javax.swing.JButton();
         jBtnHecAlterar = new javax.swing.JButton();
         jBtnHecExcluir = new javax.swing.JButton();
-        jBtnHecComfirmar = new javax.swing.JButton();
+        jBtnHecConfirmar = new javax.swing.JButton();
         jBtnHecCancelar = new javax.swing.JButton();
         jBtnHecPesquisar = new javax.swing.JButton();
         jCboHecStatus = new javax.swing.JComboBox<>();
@@ -68,21 +98,27 @@ public class JDlgHecCategoria extends javax.swing.JDialog {
 
         jBtnHecIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/acrescentar.png"))); // NOI18N
         jBtnHecIncluir.setText("Incluir");
+        jBtnHecIncluir.addActionListener(this::jBtnHecIncluirActionPerformed);
 
         jBtnHecAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/papel.png"))); // NOI18N
         jBtnHecAlterar.setText("Alterar");
+        jBtnHecAlterar.addActionListener(this::jBtnHecAlterarActionPerformed);
 
         jBtnHecExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/excluir.png"))); // NOI18N
         jBtnHecExcluir.setText("Excluir");
+        jBtnHecExcluir.addActionListener(this::jBtnHecExcluirActionPerformed);
 
-        jBtnHecComfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/verifica.png"))); // NOI18N
-        jBtnHecComfirmar.setText("Confirmar");
+        jBtnHecConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/verifica.png"))); // NOI18N
+        jBtnHecConfirmar.setText("Confirmar");
+        jBtnHecConfirmar.addActionListener(this::jBtnHecConfirmarActionPerformed);
 
         jBtnHecCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/cancelado.png"))); // NOI18N
         jBtnHecCancelar.setText("Cancelar");
+        jBtnHecCancelar.addActionListener(this::jBtnHecCancelarActionPerformed);
 
         jBtnHecPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/procurar.png"))); // NOI18N
         jBtnHecPesquisar.setText("Pesquisar");
+        jBtnHecPesquisar.addActionListener(this::jBtnHecPesquisarActionPerformed);
 
         jCboHecStatus.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
@@ -104,7 +140,7 @@ public class JDlgHecCategoria extends javax.swing.JDialog {
                         .addGap(96, 96, 96))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jBtnHecComfirmar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jBtnHecConfirmar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jBtnHecIncluir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -178,7 +214,7 @@ public class JDlgHecCategoria extends javax.swing.JDialog {
                     .addComponent(jBtnHecExcluir))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jBtnHecComfirmar)
+                    .addComponent(jBtnHecConfirmar)
                     .addComponent(jBtnHecCancelar)
                     .addComponent(jBtnHecPesquisar))
                 .addGap(48, 48, 48))
@@ -186,6 +222,36 @@ public class JDlgHecCategoria extends javax.swing.JDialog {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jBtnHecIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnHecIncluirActionPerformed
+        // TODO add your handling code here:
+        habilitar(true);
+    }//GEN-LAST:event_jBtnHecIncluirActionPerformed
+
+    private void jBtnHecCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnHecCancelarActionPerformed
+        // TODO add your handling code here:
+        habilitar(false);
+    }//GEN-LAST:event_jBtnHecCancelarActionPerformed
+
+    private void jBtnHecAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnHecAlterarActionPerformed
+        // TODO add your handling code here:
+        habilitar(rootPaneCheckingEnabled);
+    }//GEN-LAST:event_jBtnHecAlterarActionPerformed
+
+    private void jBtnHecConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnHecConfirmarActionPerformed
+        // TODO add your handling code here:
+        habilitar(!rootPaneCheckingEnabled);
+    }//GEN-LAST:event_jBtnHecConfirmarActionPerformed
+
+    private void jBtnHecExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnHecExcluirActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showConfirmDialog(null, "Confirma Exclusão", "Selecione uma opção", JOptionPane.YES_NO_OPTION);
+    }//GEN-LAST:event_jBtnHecExcluirActionPerformed
+
+    private void jBtnHecPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnHecPesquisarActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showInputDialog(null, "Entre com a chave primaria:");
+    }//GEN-LAST:event_jBtnHecPesquisarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -227,7 +293,7 @@ public class JDlgHecCategoria extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jBtnHecAlterar;
     private javax.swing.JButton jBtnHecCancelar;
-    private javax.swing.JButton jBtnHecComfirmar;
+    private javax.swing.JButton jBtnHecConfirmar;
     private javax.swing.JButton jBtnHecExcluir;
     private javax.swing.JButton jBtnHecIncluir;
     private javax.swing.JButton jBtnHecPesquisar;

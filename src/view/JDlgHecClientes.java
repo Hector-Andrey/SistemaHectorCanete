@@ -4,6 +4,8 @@
  */
 package view;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author hecto
@@ -18,6 +20,52 @@ public class JDlgHecClientes extends javax.swing.JDialog {
     public JDlgHecClientes(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+         setTitle("Cadastro de Cliente");
+        setLocationRelativeTo(null);
+        
+                
+        jTxtHecNome.setEnabled(false);
+        jFmtHecCEP.setEnabled(false);
+        jTxtHecSobrenome.setEnabled(false);
+        jFmtHecCPF.setEnabled(false);
+        jFmtHecDataNascimento.setEnabled(false);
+        jFmtHecNumero.setEnabled(false);
+        jFmtHecTelefone.setEnabled(false);
+        jChbHecStatus.setEnabled(false);
+        jTxtHecPais.setEnabled(false);
+        jTxtHecEstado.setEnabled(false);
+        jTxtHecCidade.setEnabled(false);
+        jTxtHecBairro.setEnabled(false);
+        jTxtHecComplemento.setEnabled(false);
+        jTxtHecComplemento.setEnabled(false);
+        jTxtHecEndereco.setEnabled(false);
+        jTxtHecEmail.setEnabled(false);
+        jBtnHecConfirmar.setEnabled(false);
+        jBtnHecCancelar.setEnabled(false);
+        
+    }
+        public void habilitar(boolean valor) {
+        jTxtHecNome.setEnabled(valor);
+        jTxtHecSobrenome.setEnabled(valor);
+        jTxtHecEmail.setEnabled(valor);
+        jFmtHecTelefone.setEnabled(valor);
+        jFmtHecDataNascimento.setEnabled(valor);
+        jFmtHecCPF.setEnabled(valor);
+        jTxtHecPais.setEnabled(valor);
+        jTxtHecEstado.setEnabled(valor);
+        jTxtHecCidade.setEnabled(valor);
+        jFmtHecCEP.setEnabled(valor);
+        jTxtHecBairro.setEnabled(valor);
+        jTxtHecEndereco.setEnabled(valor);
+        jTxtHecComplemento.setEnabled(valor);
+        jFmtHecNumero.setEnabled(valor);
+        jChbHecStatus.setEnabled(valor);
+        jBtnHecConfirmar.setEnabled(valor);
+        jBtnHecCancelar.setEnabled(valor);
+        jBtnHecPesquisar.setEnabled(!valor);
+        jBtnHecExcluir.setEnabled(!valor);
+        jBtnHecAlterar.setEnabled(!valor);
+        jBtnHecIncluir.setEnabled(!valor);
     }
 
     /**
@@ -38,7 +86,7 @@ public class JDlgHecClientes extends javax.swing.JDialog {
         jLabel2 = new javax.swing.JLabel();
         jFmtHecTelefone = new javax.swing.JFormattedTextField();
         jLabel3 = new javax.swing.JLabel();
-        jFormattedTextField2 = new javax.swing.JFormattedTextField();
+        jFmtHecCPF = new javax.swing.JFormattedTextField();
         jLabel4 = new javax.swing.JLabel();
         jFmtHecDataNascimento = new javax.swing.JFormattedTextField();
         jLabel7 = new javax.swing.JLabel();
@@ -48,7 +96,7 @@ public class JDlgHecClientes extends javax.swing.JDialog {
         jLabel9 = new javax.swing.JLabel();
         jTxtHecCidade = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
-        jFormattedTextField4 = new javax.swing.JFormattedTextField();
+        jFmtHecCEP = new javax.swing.JFormattedTextField();
         jLabel11 = new javax.swing.JLabel();
         jTxtHecBairro = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
@@ -98,21 +146,27 @@ public class JDlgHecClientes extends javax.swing.JDialog {
 
         jBtnHecIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/acrescentar.png"))); // NOI18N
         jBtnHecIncluir.setText("Incluir");
+        jBtnHecIncluir.addActionListener(this::jBtnHecIncluirActionPerformed);
 
         jBtnHecAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/papel.png"))); // NOI18N
         jBtnHecAlterar.setText("Alterar");
+        jBtnHecAlterar.addActionListener(this::jBtnHecAlterarActionPerformed);
 
         jBtnHecExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/excluir.png"))); // NOI18N
         jBtnHecExcluir.setText("Excluir");
+        jBtnHecExcluir.addActionListener(this::jBtnHecExcluirActionPerformed);
 
         jBtnHecConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/verifica.png"))); // NOI18N
         jBtnHecConfirmar.setText("Confirmar");
+        jBtnHecConfirmar.addActionListener(this::jBtnHecConfirmarActionPerformed);
 
         jBtnHecCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/cancelado.png"))); // NOI18N
         jBtnHecCancelar.setText("Cancelar");
+        jBtnHecCancelar.addActionListener(this::jBtnHecCancelarActionPerformed);
 
         jBtnHecPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/procurar.png"))); // NOI18N
         jBtnHecPesquisar.setText("Pesquisar");
+        jBtnHecPesquisar.addActionListener(this::jBtnHecPesquisarActionPerformed);
 
         jChbHecStatus.setText("Ativo");
 
@@ -185,9 +239,9 @@ public class JDlgHecClientes extends javax.swing.JDialog {
                                 .addGap(12, 12, 12)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jFormattedTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
+                            .addComponent(jFmtHecCPF, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
                             .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jFormattedTextField4)
+                            .addComponent(jFmtHecCEP)
                             .addComponent(jChbHecStatus, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
@@ -226,7 +280,7 @@ public class JDlgHecClientes extends javax.swing.JDialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTxtHecEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jFmtHecTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jFormattedTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jFmtHecCPF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jFmtHecDataNascimento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -239,7 +293,7 @@ public class JDlgHecClientes extends javax.swing.JDialog {
                     .addComponent(jTxtHecPais, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTxtHecEstado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTxtHecCidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jFormattedTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jFmtHecCEP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel11)
@@ -267,6 +321,36 @@ public class JDlgHecClientes extends javax.swing.JDialog {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jBtnHecIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnHecIncluirActionPerformed
+        // TODO add your handling code here:
+        habilitar(true);
+    }//GEN-LAST:event_jBtnHecIncluirActionPerformed
+
+    private void jBtnHecCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnHecCancelarActionPerformed
+        // TODO add your handling code here:
+        habilitar(false);
+    }//GEN-LAST:event_jBtnHecCancelarActionPerformed
+
+    private void jBtnHecAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnHecAlterarActionPerformed
+        // TODO add your handling code here:
+        habilitar(rootPaneCheckingEnabled);
+    }//GEN-LAST:event_jBtnHecAlterarActionPerformed
+
+    private void jBtnHecConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnHecConfirmarActionPerformed
+        // TODO add your handling code here:
+        habilitar(!rootPaneCheckingEnabled);
+    }//GEN-LAST:event_jBtnHecConfirmarActionPerformed
+
+    private void jBtnHecExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnHecExcluirActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showConfirmDialog(null, "Confirma Exclusão", "Selecione uma opção", JOptionPane.YES_NO_OPTION);
+    }//GEN-LAST:event_jBtnHecExcluirActionPerformed
+
+    private void jBtnHecPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnHecPesquisarActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showInputDialog(null, "Entre com a chave primaria:");
+    }//GEN-LAST:event_jBtnHecPesquisarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -313,11 +397,11 @@ public class JDlgHecClientes extends javax.swing.JDialog {
     private javax.swing.JButton jBtnHecIncluir;
     private javax.swing.JButton jBtnHecPesquisar;
     private javax.swing.JCheckBox jChbHecStatus;
+    private javax.swing.JFormattedTextField jFmtHecCEP;
+    private javax.swing.JFormattedTextField jFmtHecCPF;
     private javax.swing.JFormattedTextField jFmtHecDataNascimento;
     private javax.swing.JFormattedTextField jFmtHecNumero;
     private javax.swing.JFormattedTextField jFmtHecTelefone;
-    private javax.swing.JFormattedTextField jFormattedTextField2;
-    private javax.swing.JFormattedTextField jFormattedTextField4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
