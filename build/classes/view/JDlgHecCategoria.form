@@ -27,30 +27,30 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="jTextField2" min="-2" pref="100" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jFormattedTextField2" min="-2" pref="105" max="-2" attributes="0"/>
+                      <Component id="jTxtHecTipo" min="-2" pref="100" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jFmtHecDataCadastro" min="-2" pref="105" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                          <Component id="jComboBox2" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCboHecStatus" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jButton4" max="32767" attributes="0"/>
-                          <Component id="jButton1" max="32767" attributes="0"/>
+                          <Component id="jBtnHecComfirmar" max="32767" attributes="0"/>
+                          <Component id="jBtnHecIncluir" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jButton5" max="32767" attributes="0"/>
-                          <Component id="jButton2" max="32767" attributes="0"/>
+                          <Component id="jBtnHecCancelar" max="32767" attributes="0"/>
+                          <Component id="jBtnHecAlterar" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jButton6" max="32767" attributes="0"/>
-                          <Component id="jButton3" max="32767" attributes="0"/>
+                          <Component id="jBtnHecPesquisar" max="32767" attributes="0"/>
+                          <Component id="jBtnHecExcluir" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
@@ -59,30 +59,33 @@
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="jLabel3" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jFormattedTextField1" alignment="0" pref="100" max="32767" attributes="0"/>
+                                  <Component id="jFmtHecCodigo" alignment="0" pref="100" max="32767" attributes="0"/>
                                   <Component id="jLabel2" alignment="0" max="32767" attributes="0"/>
                               </Group>
-                              <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel5" alignment="0" max="32767" attributes="0"/>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                           <Component id="jLabel1" alignment="1" max="32767" attributes="0"/>
-                                          <Component id="jTextField1" alignment="1" pref="285" max="32767" attributes="0"/>
+                                          <Component id="jTxtHecNome" alignment="1" pref="285" max="32767" attributes="0"/>
                                       </Group>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                      <Component id="jLabel5" min="-2" pref="105" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="180" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jTextField3" max="32767" attributes="0"/>
+                                  <Component id="jTxtHecUsuario" max="32767" attributes="0"/>
                                   <Component id="jLabel7" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="jLabel4" max="32767" attributes="0"/>
-                                  <Component id="jTextField4" pref="195" max="32767" attributes="0"/>
+                                  <Component id="jTxtHecDescrição" pref="195" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -102,8 +105,8 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jFormattedTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jFmtHecCodigo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtHecNome" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -113,9 +116,9 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jFormattedTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jComboBox2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtHecTipo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jFmtHecDataCadastro" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jCboHecStatus" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -124,20 +127,20 @@
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jTextField4" min="-2" pref="79" max="-2" attributes="0"/>
-                  <Component id="jTextField3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtHecDescrição" min="-2" pref="79" max="-2" attributes="0"/>
+                  <Component id="jTxtHecUsuario" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnHecAlterar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnHecIncluir" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnHecExcluir" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton6" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnHecComfirmar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnHecCancelar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnHecPesquisar" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
           </Group>
@@ -150,7 +153,7 @@
         <Property name="text" type="java.lang.String" value="Codigo"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JFormattedTextField" name="jFormattedTextField1">
+    <Component class="javax.swing.JFormattedTextField" name="jFmtHecCodigo">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
@@ -172,11 +175,11 @@
         <Property name="text" type="java.lang.String" value="Data de Cadastro"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField1">
+    <Component class="javax.swing.JTextField" name="jTxtHecNome">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField2">
+    <Component class="javax.swing.JTextField" name="jTxtHecTipo">
     </Component>
-    <Component class="javax.swing.JFormattedTextField" name="jFormattedTextField2">
+    <Component class="javax.swing.JFormattedTextField" name="jFmtHecDataCadastro">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
@@ -188,11 +191,11 @@
         <Property name="text" type="java.lang.String" value="Usuario"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField3">
+    <Component class="javax.swing.JTextField" name="jTxtHecUsuario">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField4">
+    <Component class="javax.swing.JTextField" name="jTxtHecDescri&#xe7;&#xe3;o">
     </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="jBtnHecIncluir">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/imagens/imagens/acrescentar.png"/>
@@ -200,7 +203,7 @@
         <Property name="text" type="java.lang.String" value="Incluir"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton2">
+    <Component class="javax.swing.JButton" name="jBtnHecAlterar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/imagens/imagens/papel.png"/>
@@ -208,7 +211,7 @@
         <Property name="text" type="java.lang.String" value="Alterar"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton3">
+    <Component class="javax.swing.JButton" name="jBtnHecExcluir">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/imagens/imagens/excluir.png"/>
@@ -216,7 +219,7 @@
         <Property name="text" type="java.lang.String" value="Excluir"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton4">
+    <Component class="javax.swing.JButton" name="jBtnHecComfirmar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/imagens/imagens/verifica.png"/>
@@ -224,7 +227,7 @@
         <Property name="text" type="java.lang.String" value="Confirmar"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton5">
+    <Component class="javax.swing.JButton" name="jBtnHecCancelar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/imagens/imagens/cancelado.png"/>
@@ -232,7 +235,7 @@
         <Property name="text" type="java.lang.String" value="Cancelar"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton6">
+    <Component class="javax.swing.JButton" name="jBtnHecPesquisar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/imagens/imagens/procurar.png"/>
@@ -240,7 +243,7 @@
         <Property name="text" type="java.lang.String" value="Pesquisar"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="jComboBox2">
+    <Component class="javax.swing.JComboBox" name="jCboHecStatus">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="4">

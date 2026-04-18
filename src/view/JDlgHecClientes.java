@@ -30,40 +30,40 @@ public class JDlgHecClientes extends javax.swing.JDialog {
     private void initComponents() {
 
         jLabel5 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
+        jTxtHecSobrenome = new javax.swing.JTextField();
+        jTxtHecNome = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
+        jTxtHecEmail = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jFormattedTextField1 = new javax.swing.JFormattedTextField();
+        jFmtHecTelefone = new javax.swing.JFormattedTextField();
         jLabel3 = new javax.swing.JLabel();
         jFormattedTextField2 = new javax.swing.JFormattedTextField();
         jLabel4 = new javax.swing.JLabel();
-        jFormattedTextField3 = new javax.swing.JFormattedTextField();
+        jFmtHecDataNascimento = new javax.swing.JFormattedTextField();
         jLabel7 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
+        jTxtHecPais = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
+        jTxtHecEstado = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
+        jTxtHecCidade = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
         jFormattedTextField4 = new javax.swing.JFormattedTextField();
         jLabel11 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
+        jTxtHecBairro = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
-        jTextField8 = new javax.swing.JTextField();
+        jTxtHecEndereco = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
+        jTxtHecComplemento = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
-        jFormattedTextField5 = new javax.swing.JFormattedTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jCheckBox2 = new javax.swing.JCheckBox();
+        jFmtHecNumero = new javax.swing.JFormattedTextField();
+        jBtnHecIncluir = new javax.swing.JButton();
+        jBtnHecAlterar = new javax.swing.JButton();
+        jBtnHecExcluir = new javax.swing.JButton();
+        jBtnHecConfirmar = new javax.swing.JButton();
+        jBtnHecCancelar = new javax.swing.JButton();
+        jBtnHecPesquisar = new javax.swing.JButton();
+        jChbHecStatus = new javax.swing.JCheckBox();
         jLabel15 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -96,27 +96,25 @@ public class JDlgHecClientes extends javax.swing.JDialog {
 
         jLabel14.setText("Numero");
 
-        jFormattedTextField5.setText("jFormattedTextField5");
+        jBtnHecIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/acrescentar.png"))); // NOI18N
+        jBtnHecIncluir.setText("Incluir");
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/acrescentar.png"))); // NOI18N
-        jButton1.setText("Incluir");
+        jBtnHecAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/papel.png"))); // NOI18N
+        jBtnHecAlterar.setText("Alterar");
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/papel.png"))); // NOI18N
-        jButton2.setText("Alterar");
+        jBtnHecExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/excluir.png"))); // NOI18N
+        jBtnHecExcluir.setText("Excluir");
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/excluir.png"))); // NOI18N
-        jButton3.setText("Excluir");
+        jBtnHecConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/verifica.png"))); // NOI18N
+        jBtnHecConfirmar.setText("Confirmar");
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/verifica.png"))); // NOI18N
-        jButton4.setText("Confirmar");
+        jBtnHecCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/cancelado.png"))); // NOI18N
+        jBtnHecCancelar.setText("Cancelar");
 
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/cancelado.png"))); // NOI18N
-        jButton5.setText("Cancelar");
+        jBtnHecPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/procurar.png"))); // NOI18N
+        jBtnHecPesquisar.setText("Pesquisar");
 
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/procurar.png"))); // NOI18N
-        jButton6.setText("Pesquisar");
-
-        jCheckBox2.setText("Ativo");
+        jChbHecStatus.setText("Ativo");
 
         jLabel15.setText("Status");
 
@@ -129,25 +127,25 @@ public class JDlgHecClientes extends javax.swing.JDialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField2)
+                            .addComponent(jTxtHecNome)
                             .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 443, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 443, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jTxtHecSobrenome, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 443, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTextField3, javax.swing.GroupLayout.DEFAULT_SIZE, 285, Short.MAX_VALUE)
+                                    .addComponent(jTxtHecEmail, javax.swing.GroupLayout.DEFAULT_SIZE, 285, Short.MAX_VALUE)
                                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jFormattedTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE))
+                                    .addComponent(jFmtHecTelefone, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jFormattedTextField3)
+                                    .addComponent(jFmtHecDataNascimento)
                                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
                             .addGroup(layout.createSequentialGroup()
@@ -155,7 +153,7 @@ public class JDlgHecClientes extends javax.swing.JDialog {
                                     .addGroup(layout.createSequentialGroup()
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                             .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(jTextField7, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE))
+                                            .addComponent(jTxtHecBairro, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE))
                                         .addGap(12, 12, 12)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                             .addGroup(layout.createSequentialGroup()
@@ -163,26 +161,26 @@ public class JDlgHecClientes extends javax.swing.JDialog {
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                                 .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                             .addGroup(layout.createSequentialGroup()
-                                                .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(jTxtHecEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                .addComponent(jTxtHecComplemento, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(layout.createSequentialGroup()
                                                 .addGap(0, 3, Short.MAX_VALUE)
-                                                .addComponent(jFormattedTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(jFmtHecNumero, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                                     .addGroup(layout.createSequentialGroup()
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jTextField4, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
+                                            .addComponent(jTxtHecPais, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
                                             .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 305, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(jTxtHecEstado, javax.swing.GroupLayout.PREFERRED_SIZE, 305, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jTextField6, javax.swing.GroupLayout.DEFAULT_SIZE, 305, Short.MAX_VALUE)
+                                            .addComponent(jTxtHecCidade, javax.swing.GroupLayout.DEFAULT_SIZE, 305, Short.MAX_VALUE)
                                             .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                                 .addGap(12, 12, 12)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -190,21 +188,20 @@ public class JDlgHecClientes extends javax.swing.JDialog {
                             .addComponent(jFormattedTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
                             .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jFormattedTextField4)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(jCheckBox2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel15, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(jChbHecStatus, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1)
+                        .addComponent(jBtnHecIncluir)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton2)
+                        .addComponent(jBtnHecAlterar)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton3)
+                        .addComponent(jBtnHecExcluir)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton4)
+                        .addComponent(jBtnHecConfirmar)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton5)
+                        .addComponent(jBtnHecCancelar)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton6)
+                        .addComponent(jBtnHecPesquisar)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -217,8 +214,8 @@ public class JDlgHecClientes extends javax.swing.JDialog {
                     .addComponent(jLabel6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTxtHecNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtHecSobrenome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
@@ -227,10 +224,10 @@ public class JDlgHecClientes extends javax.swing.JDialog {
                     .addComponent(jLabel4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtHecEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jFmtHecTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jFormattedTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jFormattedTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jFmtHecDataNascimento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
@@ -239,9 +236,9 @@ public class JDlgHecClientes extends javax.swing.JDialog {
                     .addComponent(jLabel10))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtHecPais, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtHecEstado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtHecCidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jFormattedTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -252,19 +249,19 @@ public class JDlgHecClientes extends javax.swing.JDialog {
                     .addComponent(jLabel15))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jFormattedTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jCheckBox2))
+                    .addComponent(jTxtHecBairro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtHecEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtHecComplemento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jFmtHecNumero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jChbHecStatus))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3)
-                    .addComponent(jButton4)
-                    .addComponent(jButton5)
-                    .addComponent(jButton6))
+                    .addComponent(jBtnHecIncluir)
+                    .addComponent(jBtnHecAlterar)
+                    .addComponent(jBtnHecExcluir)
+                    .addComponent(jBtnHecConfirmar)
+                    .addComponent(jBtnHecCancelar)
+                    .addComponent(jBtnHecPesquisar))
                 .addContainerGap(27, Short.MAX_VALUE))
         );
 
@@ -309,18 +306,18 @@ public class JDlgHecClientes extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JCheckBox jCheckBox2;
-    private javax.swing.JFormattedTextField jFormattedTextField1;
+    private javax.swing.JButton jBtnHecAlterar;
+    private javax.swing.JButton jBtnHecCancelar;
+    private javax.swing.JButton jBtnHecConfirmar;
+    private javax.swing.JButton jBtnHecExcluir;
+    private javax.swing.JButton jBtnHecIncluir;
+    private javax.swing.JButton jBtnHecPesquisar;
+    private javax.swing.JCheckBox jChbHecStatus;
+    private javax.swing.JFormattedTextField jFmtHecDataNascimento;
+    private javax.swing.JFormattedTextField jFmtHecNumero;
+    private javax.swing.JFormattedTextField jFmtHecTelefone;
     private javax.swing.JFormattedTextField jFormattedTextField2;
-    private javax.swing.JFormattedTextField jFormattedTextField3;
     private javax.swing.JFormattedTextField jFormattedTextField4;
-    private javax.swing.JFormattedTextField jFormattedTextField5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -336,14 +333,14 @@ public class JDlgHecClientes extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextField jTxtHecBairro;
+    private javax.swing.JTextField jTxtHecCidade;
+    private javax.swing.JTextField jTxtHecComplemento;
+    private javax.swing.JTextField jTxtHecEmail;
+    private javax.swing.JTextField jTxtHecEndereco;
+    private javax.swing.JTextField jTxtHecEstado;
+    private javax.swing.JTextField jTxtHecNome;
+    private javax.swing.JTextField jTxtHecPais;
+    private javax.swing.JTextField jTxtHecSobrenome;
     // End of variables declaration//GEN-END:variables
 }
