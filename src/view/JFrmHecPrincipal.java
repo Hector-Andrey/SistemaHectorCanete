@@ -8,14 +8,14 @@ package view;
  *
  * @author hecto
  */
-public class JFrmHecMenus extends javax.swing.JFrame {
+public class JFrmHecPrincipal extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(JFrmHecMenus.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(JFrmHecPrincipal.class.getName());
 
     /**
      * Creates new form JFrmHec
      */
-    public JFrmHecMenus() {
+    public JFrmHecPrincipal() {
         initComponents();
         setTitle("Sistema de Compra é Venda de peças é perifericos de computadores");
         setExtendedState(MAXIMIZED_BOTH);
@@ -190,7 +190,7 @@ public class JFrmHecMenus extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new JFrmHecMenus().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new JFrmHecPrincipal().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
