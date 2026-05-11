@@ -9,151 +9,152 @@ import java.util.Date;
  *
  * @author hecto
  */
-public class hec_fornecedor {
+public class Hec_fornecedor {
     
-  private int hec_id_fornecedor;
-  private String hec_nome_empresa;
-  private String hec_nome_representante;
-  private String hec_sobrenome_representante;
-  private String hec_email;
-  private String hec_telefone;
-  private String hec_endereco;
-  private String hec_cidade;
-  private String hec_estado;
-  private String hec_cep;
-  private String hec_pais;
-  private String hec_complemento;
-  private String hec_numero;
-  private String hec_cnpj;
-  private String hec_status;
-  private Date hec_data_cadastro;
+  private int Hec_id_fornecedor;
+  private String Hec_nome_empresa;
+  private String Hec_nome_representante;
+  private String Hec_sobrenome_representante;
+  private String Hec_email;
+  private String Hec_telefone;
+  private String Hec_endereco;
+  private String Hec_cidade;
+  private String Hec_estado;
+  private String Hec_cep;
+  private String Hec_pais;
+  private String Hec_complemento;
+  private String Hec_numero;
+  private String Hec_cnpj;
+  private String Hec_status;
+  private Date Hec_data_cadastro;
 
     public int getHec_id_fornecedor() {
-        return hec_id_fornecedor;
+        return Hec_id_fornecedor;
     }
 
-    public void setHec_id_fornecedor(int hec_id_fornecedor) {
-        this.hec_id_fornecedor = hec_id_fornecedor;
+    public void setHec_id_fornecedor(int Hec_id_fornecedor) {
+        this.Hec_id_fornecedor = Hec_id_fornecedor;
     }
 
     public String getHec_nome_empresa() {
-        return hec_nome_empresa;
+        return Hec_nome_empresa;
     }
 
-    public void setHec_nome_empresa(String hec_nome_empresa) {
-        this.hec_nome_empresa = hec_nome_empresa;
+    public void setHec_nome_empresa(String Hec_nome_empresa) {
+        this.Hec_nome_empresa = Hec_nome_empresa;
     }
 
     public String getHec_nome_representante() {
-        return hec_nome_representante;
+        return Hec_nome_representante;
     }
 
-    public void setHec_nome_representante(String hec_nome_representante) {
-        this.hec_nome_representante = hec_nome_representante;
+    public void setHec_nome_representante(String Hec_nome_representante) {
+        this.Hec_nome_representante = Hec_nome_representante;
     }
 
     public String getHec_sobrenome_representante() {
-        return hec_sobrenome_representante;
+        return Hec_sobrenome_representante;
     }
 
-    public void setHec_sobrenome_representante(String hec_sobrenome_representante) {
-        this.hec_sobrenome_representante = hec_sobrenome_representante;
+    public void setHec_sobrenome_representante(String Hec_sobrenome_representante) {
+        this.Hec_sobrenome_representante = Hec_sobrenome_representante;
     }
 
     public String getHec_email() {
-        return hec_email;
+        return Hec_email;
     }
 
-    public void setHec_email(String hec_email) {
-        this.hec_email = hec_email;
+    public void setHec_email(String Hec_email) {
+        this.Hec_email = Hec_email;
     }
 
     public String getHec_telefone() {
-        return hec_telefone;
+        return Hec_telefone;
     }
 
-    public void setHec_telefone(String hec_telefone) {
-        this.hec_telefone = hec_telefone;
+    public void setHec_telefone(String Hec_telefone) {
+        this.Hec_telefone = Hec_telefone;
     }
 
     public String getHec_endereco() {
-        return hec_endereco;
+        return Hec_endereco;
     }
 
-    public void setHec_endereco(String hec_endereco) {
-        this.hec_endereco = hec_endereco;
+    public void setHec_endereco(String Hec_endereco) {
+        this.Hec_endereco = Hec_endereco;
     }
 
     public String getHec_cidade() {
-        return hec_cidade;
+        return Hec_cidade;
     }
 
-    public void setHec_cidade(String hec_cidade) {
-        this.hec_cidade = hec_cidade;
+    public void setHec_cidade(String Hec_cidade) {
+        this.Hec_cidade = Hec_cidade;
     }
 
     public String getHec_estado() {
-        return hec_estado;
+        return Hec_estado;
     }
 
-    public void setHec_estado(String hec_estado) {
-        this.hec_estado = hec_estado;
+    public void setHec_estado(String Hec_estado) {
+        this.Hec_estado = Hec_estado;
     }
 
     public String getHec_cep() {
-        return hec_cep;
+        return Hec_cep;
     }
 
-    public void setHec_cep(String hec_cep) {
-        this.hec_cep = hec_cep;
+    public void setHec_cep(String Hec_cep) {
+        this.Hec_cep = Hec_cep;
     }
+
 
     public String getHec_pais() {
-        return hec_pais;
+        return Hec_pais;
     }
 
-    public void setHec_pais(String hec_pais) {
-        this.hec_pais = hec_pais;
+    public void setHec_pais(String Hec_pais) {
+        this.Hec_pais = Hec_pais;
     }
 
     public String getHec_complemento() {
-        return hec_complemento;
+        return Hec_complemento;
     }
 
-    public void setHec_complemento(String hec_complemento) {
-        this.hec_complemento = hec_complemento;
+    public void setHec_complemento(String Hec_complemento) {
+        this.Hec_complemento = Hec_complemento;
     }
 
     public String getHec_numero() {
-        return hec_numero;
+        return Hec_numero;
     }
 
-    public void setHec_numero(String hec_numero) {
-        this.hec_numero = hec_numero;
+    public void setHec_numero(String Hec_numero) {
+        this.Hec_numero = Hec_numero;
     }
 
     public String getHec_cnpj() {
-        return hec_cnpj;
+        return Hec_cnpj;
     }
 
-    public void setHec_cnpj(String hec_cnpj) {
-        this.hec_cnpj = hec_cnpj;
+    public void setHec_cnpj(String Hec_cnpj) {
+        this.Hec_cnpj = Hec_cnpj;
     }
 
     public String getHec_status() {
-        return hec_status;
+        return Hec_status;
     }
 
-    public void setHec_status(String hec_status) {
-        this.hec_status = hec_status;
+    public void setHec_status(String Hec_status) {
+        this.Hec_status = Hec_status;
     }
 
     public Date getHec_data_cadastro() {
-        return hec_data_cadastro;
+        return Hec_data_cadastro;
     }
 
-    public void setHec_data_cadastro(Date hec_data_cadastro) {
-        this.hec_data_cadastro = hec_data_cadastro;
+    public void setHec_data_cadastro(Date Hec_data_cadastro) {
+        this.Hec_data_cadastro = Hec_data_cadastro;
     }
 
 }
